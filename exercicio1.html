@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 1</title>
+</head>
+<body>
+    <h1>Exemplo do repeat()</h1>
+    <p id="sorvetao"></p>
+    <p id="hamburgao"></p>
+    <p id="refris"> </p>
+    <p id="batata"></p>
+</body>
+<script>
+
+let valor1 = parseInt(prompt("Digite a quantidade de sorvuetes"))
+let sorvete = fazerSorvete(valor1) 
+//DOM(Document Objet Modulo)
+document.getElementById('sorvetao').innerHTML = sorvete; 
+
+function fazerSorvete(quantidade){
+   return '🍦'.repeat(quantidade);
+} 
+
+let valor2 = parseInt(prompt("Digite quantos hamburgers tu quieres"))
+let hamburgao = fazerHamburgao(valor2)
+//
+document.getElementById('hamburgao').innerHTML = hamburgao;
+function fazerHamburgao(quantidade){
+    return '🍔'.repeat(quantidade);
+}
+
+let valor3 = parseInt(prompt("Digite quantos refris tu quieres"))
+let refris = fazerRefris(valor3)
+//
+document.getElementById('refris').innerHTML = refris;
+function fazerRefris(quantidade){
+    return '🥤'.repeat(quantidade);
+}
+
+let valor4 = parseInt(prompt("Digite quantas batatas tu quieres"))
+let batata = fazerBatata(valor4)
+//
+document.getElementById('batata').innerHTML = batata;
+function fazerBatata(quantidade){
+    return '🍟'.repeat(quantidade);
+}
+
+
+</script>
+</html>

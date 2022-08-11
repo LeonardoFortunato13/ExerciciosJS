@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body onload="calculo()">
+    
+    <p id="resultado"></p>
+    <p id="resultado2"></p>
+    <p id="resultado3"></p>
+    <p id="resultado4"></p>
+    <p id="resultado5"></p>
+    <p id="resultado6"></p>
+    <p id="resultado7"></p>
+    <p id="resultado8"></p>
+    <p id="resultado9"></p>
+    <p id="resultado10"></p>
+    <p id="resultado11"></p>
+    <p id="resultado12"></p>
+
+
+</body>
+<script>
+
+function calculo(){
+    let x = 2;
+    let y = 5;
+    let z = 15;
+    
+    //Utilizando o jquerry para cálculos dentro de textos
+    document.getElementById('resultado').innerHTML = `O resultado do calculo é ${x + y - z} do exemplo 1`
+    document.getElementById('resultado2').innerHTML = `O resultado do calculo é ${ x / y } do exemplo 2`
+    document.getElementById('resultado3').innerHTML = `O resultado do calculo é ${ y*z } do exemplo 3`
+    document.getElementById('resultado4').innerHTML = `O resultado do calculo é ${ x**y+z/y } do exemplo 4`
+    document.getElementById('resultado5').innerHTML = `O resultado do calculo é ${ z / y } do exemplo 5`
+    document.getElementById('resultado6').innerHTML = `O resultado do calculo é ${ z % y } do exemplo 6`
+    document.getElementById('resultado7').innerHTML = `O resultado do calculo é ${ z / x } do exemplo 7`
+    document.getElementById('resultado8').innerHTML = `O resultado do calculo é ${ z / x } do exemplo 8`
+    document.getElementById('resultado9').innerHTML = `O resultado do calculo é ${ (x+y)*(z-x)/8 } do exemplo 9`
+    document.getElementById('resultado10').innerHTML = `O resultado do calculo é ${ 3*x + 5*y + 0.5*4 } do exemplo 10`
+    document.getElementById('resultado11').innerHTML = `O resultado do calculo é ${ x=y+z } do exemplo 11`
+    document.getElementById('resultado12').innerHTML = `O resultado do calculo é ${7*x } do exemplo 12`
+
+}
+
+function calculo2(){
+
+}
+
+</script>
+</html>
